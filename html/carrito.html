@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Mi Carrito Independiente</title>
+    <link rel="stylesheet" href="../css/style_carrito.css">
+</head>
+<body>
+    <header>
+        <div class="izquierda">
+            <h1>Mi Carrito</h1>
+        </div>
+        <div class="derecha">
+            <img src="../Imagenes/Carrito.png">
+        </div>
+    </header>
+
+     <main>
+    <div id="carrito" class="contenedor-principal-carrito">  
+
+        <div class="listaproductos">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Producto</th>
+                        <th>Precio Unitario</th>
+                        <th>Cantidad</th>
+                        <th>Subtotal</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="producto-info">
+                            <img src="../Imagenes/teclado.png" alt="Teclado Mecánico RGB">
+                            <span>Teclado Mecánico RGB</span>
+                        </td>
+                        <td>$75.00</td>
+                        <td><input type="number" value="1" min="1"></td>
+                        <td>$75.00</td>
+                        <td><button class="btn-eliminar">Eliminar</button></td>
+                    </tr>
+                    <tr>
+                        <td class="producto-info">
+                            <img src="../Imagenes/mouse.png" alt="Mouse Gamer G502">
+                            <span>Mouse Gamer G502</span>
+                        </td>
+                        <td>$75.00</td>
+                        <td><input type="number" value="1" min="1"></td>
+                        <td>$75.00</td>
+                        <td><button class="btn-eliminar">Eliminar</button></td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </div>
+
+        <aside class="barra-lateral">
+        <div class="titulo">
+      <h2>RESUMEN DEL PEDIDO</h2>
+    </div>
+    
+    <div class="resumen-body">
+      <div class="fila-1">
+        <span>Productos (2):</span>
+        <span>$150.00</span>
+      </div>
+      
+      <div class="fila-1">
+        <span>Envío:</span>
+        <span>$10.00</span>
+      </div>
+      
+      <hr>
+      
+      <div class="fila-3">
+        <strong>Total a Pagar:</strong>
+        <strong>$160.00</strong>
+      </div>
+    </div>
+    
+    <div class="footer">
+      <a href="#" class="link-politica"> Política de devoluciones y reembolsos</a>
+    </div>
+    </aside>
+               
+    </div>
+
+    <!-- Mensaje cuando está vacío -->
+    <div id="mensaje-vacio" style="display:none;">
+        <p>No has seleccionado ningún producto.</p>
+       <button onclick="location.href='../index.html'">Regresar a la Pagina Principal</button> 
+    </div>
+</main>
+
+</body>
+</html>

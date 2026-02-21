@@ -1,0 +1,121 @@
+body {
+    font-family: 'Sora', sans-serif;
+    background-color: #d3b49f;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #421404;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    color: #d3b49f;
+    margin: 0;
+}
+
+
+.contenedor-principal-inventario {
+    padding: 40px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.header-tabla {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.header-tabla h2 {
+    color: #421404;
+    margin: 0;
+}
+
+
+.listaproductos table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    background-color: #f1e4d8;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.listaproductos th {
+    background-color: #562c1e;
+    color: #ffffff;
+    padding: 15px;
+    text-align: left;
+    text-transform: uppercase;
+    font-size: 13px;
+}
+
+.listaproductos td {
+    padding: 15px;
+    border-bottom: 1px solid rgba(0,0,0,0.05);
+    color: #3e2723;
+}
+
+.producto-info {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.producto-info img {
+    width: 45px;
+    height: 45px;
+    border-radius: 8px;
+    object-fit: cover;
+    background: white;
+}
+
+
+.status {
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+.activo { background-color: #c8e6c9; color: #2e7d32; }
+.inactivo { background-color: #ffcdd2; color: #c62828; }
+
+.btn-nuevo {
+    background-color: #562c1e;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Sora';
+}
+
+.btn-editar {
+    background-color: #3e2723;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+.btn-eliminar {
+    background-color: #e53935;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn-eliminar:hover { background-color: #b71c1c; }
