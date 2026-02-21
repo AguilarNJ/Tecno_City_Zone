@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nuevo Producto</title>
+  <link rel="stylesheet" href="productosadmin.css">
+</head>
+<body>
+  <main class="contenedor">
+    <section class="tarjeta">
+      <h1>Nuevo producto</h1>
+      <p class="subtitulo">Formulario para crear un producto.</p>
+
+      <form id="formNuevoProducto" class="form-producto" action="#" method="post" enctype="multipart/form-data">
+        <input type="hidden" id="productoId" name="productoId" value="">
+
+        <div class="bloque">
+          <h2>Datos principales</h2>
+
+          <div class="fila">
+            <div class="campo">
+              <label for="marca">Marca <span class="requerido">*</span></label>
+              <input type="text" id="marca" name="marca" required>
+            </div>
+
+            <div class="campo">
+              <label for="categoria">Categoría <span class="requerido">*</span></label>
+              <input type="text" id="categoria" name="categoria" placeholder="Ej: Laptops & tablets" required>
+            </div>
+          </div>
+
+          <div class="fila">
+            <div class="campo">
+              <label for="titulo">Título del producto <span class="requerido">*</span></label>
+              <input type="text" id="titulo" name="titulo" required>
+            </div>
+          </div>
+
+          <div class="fila">
+            <div class="campo">
+              <label for="condicion">Condición <span class="requerido">*</span></label>
+              <select id="condicion" name="condicion" required>
+                <option value="">Seleccione</option>
+                <option value="Nuevo">Nuevo</option>
+                <option value="Usado">Usado</option>
+              </select>
+            </div>
+
+            <div class="campo">
+              <label for="envio">Envío</label>
+              <input type="text" id="envio" name="envio" placeholder="Ej: Envío gratis">
+            </div>
+          </div>
+        </div>
+
+        <div class="bloque">
+          <h2>Precios</h2>
+
+          <div class="fila">
+            <div class="campo">
+              <label for="precioActual">Precio actual (L) <span class="requerido">*</span></label>
+              <input type="number" id="precioActual" name="precioActual" min="0" step="0.01" required>
+            </div>
+
+            <div class="campo">
+              <label for="precioAnterior">Precio anterior (L)</label>
+              <input type="number" id="precioAnterior" name="precioAnterior" min="0" step="0.01">
+            </div>
+
+            <div class="campo">
+              <label for="descuento">Descuento (%)</label>
+              <input type="number" id="descuento" name="descuento" min="0" max="100">
+            </div>
+          </div>
+        </div>
+
+        <div class="bloque">
+          <h2>Imágenes</h2>
+
+          <div class="fila">
+            <div class="campo">
+              <label for="imagenPrincipal">Imagen principal <span class="requerido">*</span></label>
+              <input type="file" id="imagenPrincipal" name="imagenPrincipal" accept="image/*" required>
+            </div>
+          </div>
+
+          <div class="fila">
+            <div class="campo">
+              <div id="previewImagenPrincipal" class="preview-box preview-principal" data-preview="imagen-principal">
+                Imagen principal
+              </div>
+            </div>
+          </div>
+
+          <div class="fila">
+            <div class="campo">
+              <label for="galeria">Galería de imágenes</label>
+              <input type="file" id="galeria" name="galeria" accept="image/*" multiple>
+            </div>
+          </div>
+
+          <div class="fila">
+            <div class="campo">
+              <div id="previewGaleria" class="preview-box preview-galeria" data-preview="galeria">
+                <div class="thumb">Imagen 1</div>
+                <div class="thumb">Imagen 2</div>
+                <div class="thumb">Imagen 3</div>
+                <div class="thumb">Imagen 4</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="bloque">
+          <h2>Información adicional</h2>
+
+          <div class="fila">
+            <div class="campo">
+              <label for="descripcion">Descripción</label>
+              <textarea id="descripcion" name="descripcion" ></textarea>
+            </div>
+          </div>
+
+          <div class="fila">
+            <div class="campo">
+              <label for="detalles">Detalles del producto</label>
+              <textarea id="detalles" name="detalles"></textarea>
+            </div>
+          </div>
+        </div>
+
+        <div class="acciones">
+          <a href="producto.html" class="btn btn-cancelar">Cancelar</a>
+          <button id="btnGuardarProducto" type="submit" class="btn btn-guardar">Guardar producto</button>
+        </div>
+      </form>
+    </section>
+  </main>
+</body>
+</html>
